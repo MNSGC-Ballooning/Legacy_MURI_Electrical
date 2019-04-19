@@ -5067,9 +5067,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="SERVO" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="25.4" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="25.4" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="43.18" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="5V" class="0">
 <segment>
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
@@ -5090,6 +5091,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="182.88" y1="53.34" x2="180.34" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="53.34" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="43.18" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIGNAL" class="0">
@@ -5110,6 +5112,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="SERVO" gate="G$1" pin="3"/>
 <wire x1="182.88" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
 <label x="175.26" y="55.88" size="1.778" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D4"/>
+<wire x1="45.72" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="48.26" y="53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

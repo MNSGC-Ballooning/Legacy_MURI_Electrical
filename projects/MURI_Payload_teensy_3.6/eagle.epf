@@ -348,6 +348,8 @@ UsedLibraryUrn="urn:adsk.eagle:library:174"
 UsedLibraryUrn="urn:adsk.eagle:library:175"
 UsedLibraryUrn="urn:adsk.eagle:library:176"
 UsedLibraryUrn="urn:adsk.eagle:library:177"
+UsedLibrary="D:/Repositories/MURI_HAB/MURI_Electrical/libraries/1wire.lbr"
+UsedLibrary="D:/Repositories/MURI_HAB/MURI_Electrical/libraries/Teensy356.lbr"
 UsedLibrary="D:/Repositories/MURI_HAB/MURI_Electrical/libraries/Arduino-Eagle-Cad-Library-master/Arduino-clone.lbr"
 
 [Win_1]
