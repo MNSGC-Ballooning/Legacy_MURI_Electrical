@@ -11784,13 +11784,6 @@ W = angled&lt;p&gt;
 <label x="-12.7" y="200.66" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="SS0" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="28"/>
-<wire x1="-172.72" y1="78.74" x2="-193.04" y2="78.74" width="0.1524" layer="91"/>
-<label x="-193.04" y="78.74" size="1.778" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="BATTERY" gate="G$1" pin="2"/>
