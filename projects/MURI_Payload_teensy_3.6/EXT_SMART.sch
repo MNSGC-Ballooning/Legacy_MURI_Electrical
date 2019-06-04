@@ -4993,7 +4993,7 @@ W = angled&lt;p&gt;
 <net name="PWM" class="0">
 <segment>
 <pinref part="SERVO" gate="G$1" pin="3"/>
-<wire x1="200.66" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
 <label x="193.04" y="53.34" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
