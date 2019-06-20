@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10339,11 +10339,6 @@ chip</description>
 </package>
 </packages>
 <symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="VCC2">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -10374,19 +10369,6 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VCC" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -12163,6 +12145,72 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </deviceset>
 </devicesets>
 </library>
+<library name="282834-2">
+<packages>
+<package name="CONN_282834-2">
+<wire x1="-2.77" y1="3.25" x2="2.77" y2="3.25" width="0.127" layer="21"/>
+<wire x1="2.77" y1="3.25" x2="2.77" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="2.77" y1="-3.25" x2="-2.77" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.77" y1="-3.25" x2="-2.77" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-2.77" y1="3.25" x2="2.77" y2="3.25" width="0.127" layer="51"/>
+<wire x1="2.77" y1="3.25" x2="2.77" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="2.77" y1="-3.25" x2="-2.77" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="-2.77" y1="-3.25" x2="-2.77" y2="3.25" width="0.127" layer="51"/>
+<circle x="-3.502" y="0" radius="0.2" width="0.4" layer="21"/>
+<wire x1="-3.02" y1="3.5" x2="3.02" y2="3.5" width="0.05" layer="39"/>
+<wire x1="3.02" y1="3.5" x2="3.02" y2="-3.5" width="0.05" layer="39"/>
+<wire x1="3.02" y1="-3.5" x2="-3.02" y2="-3.5" width="0.05" layer="39"/>
+<wire x1="-3.02" y1="-3.5" x2="-3.02" y2="3.5" width="0.05" layer="39"/>
+<text x="-3.0032" y="3.754" size="0.813665625" layer="25">&gt;NAME</text>
+<text x="-3.00425" y="-4.50636875" size="0.81395" layer="27">&gt;VALUE</text>
+<pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="282834-2">
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-3.05226875" y="3.433809375" size="1.01741875" layer="95">&gt;NAME</text>
+<text x="-3.05121875" y="-6.7381" size="1.01706875" layer="96">&gt;VALUE</text>
+<pin name="1" x="5.08" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="-2.54" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="282834-2" prefix="J">
+<description>Terminal block; 2.54mm; angled 90°; 0.03÷1mm2; ways: 2; 10A; H: 10mm</description>
+<gates>
+<gate name="G$1" symbol="282834-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_282834-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CENTERLINE_PITCH" value="2.54 mm[.1 in]"/>
+<attribute name="COMMENT" value="282834-2"/>
+<attribute name="DESCRIPTION" value=" TERMI-BLOK PCB MOUNT, 90 2P. "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="A98333-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/282834-2/A98333-ND/1150135?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="EU_ROHS_COMPLIANCE" value="Compliant with Exemptions"/>
+<attribute name="MF" value="TE Connectivity"/>
+<attribute name="MP" value="282834-2"/>
+<attribute name="NUMBER_OF_POSITIONS" value="2"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-282834-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12232,11 +12280,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="4.7k"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CS1" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="CIO" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="CS2" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="SWITCH" library="con-amp-quick" library_urn="urn:adsk.eagle:library:125" deviceset="M02" device="" package3d_urn="urn:adsk.eagle:package:5956/1"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -12269,6 +12315,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="J1" library="282834-2" deviceset="282834-2" device=""/>
+<part name="J2" library="282834-2" deviceset="282834-2" device=""/>
+<part name="J3" library="282834-2" deviceset="282834-2" device=""/>
+<part name="J4" library="282834-2" deviceset="282834-2" device=""/>
+<part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY34" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY35" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12475,9 +12531,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="NAME" x="59.944" y="208.661" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.944" y="203.581" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="53.34" y="193.04" smashed="yes">
-<attribute name="VALUE" x="50.8" y="190.5" size="1.778" layer="96"/>
-</instance>
 <instance part="P+1" gate="1" x="53.34" y="218.44" smashed="yes">
 <attribute name="VALUE" x="52.324" y="221.996" size="1.778" layer="96"/>
 </instance>
@@ -12487,9 +12540,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="CIO" gate="G$1" x="73.66" y="205.74" smashed="yes">
 <attribute name="NAME" x="75.184" y="208.661" size="1.778" layer="95"/>
 <attribute name="VALUE" x="75.184" y="203.581" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="73.66" y="193.04" smashed="yes">
-<attribute name="VALUE" x="71.12" y="190.5" size="1.778" layer="96"/>
 </instance>
 <instance part="CS2" gate="G$1" x="48.26" y="208.28" smashed="yes">
 <attribute name="NAME" x="49.276" y="208.915" size="1.778" layer="95"/>
@@ -12605,6 +12655,40 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="SUPPLY30" gate="GND" x="284.48" y="142.24" smashed="yes">
 <attribute name="VALUE" x="282.575" y="139.065" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY31" gate="GND" x="53.34" y="193.04" smashed="yes">
+<attribute name="VALUE" x="51.435" y="189.865" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY32" gate="GND" x="73.66" y="193.04" smashed="yes">
+<attribute name="VALUE" x="71.755" y="189.865" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="-139.7" y="205.74" smashed="yes">
+<attribute name="NAME" x="-142.75226875" y="209.173809375" size="1.01741875" layer="95"/>
+<attribute name="VALUE" x="-142.75121875" y="199.0019" size="1.01706875" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="-121.92" y="205.74" smashed="yes">
+<attribute name="NAME" x="-124.97226875" y="209.173809375" size="1.01741875" layer="95"/>
+<attribute name="VALUE" x="-124.97121875" y="199.0019" size="1.01706875" layer="96"/>
+</instance>
+<instance part="J3" gate="G$1" x="-139.7" y="220.98" smashed="yes">
+<attribute name="NAME" x="-142.75226875" y="224.413809375" size="1.01741875" layer="95"/>
+<attribute name="VALUE" x="-142.75121875" y="214.2419" size="1.01706875" layer="96"/>
+</instance>
+<instance part="J4" gate="G$1" x="-121.92" y="220.98" smashed="yes">
+<attribute name="NAME" x="-124.97226875" y="224.413809375" size="1.01741875" layer="95"/>
+<attribute name="VALUE" x="-124.97121875" y="214.2419" size="1.01706875" layer="96"/>
+</instance>
+<instance part="SUPPLY33" gate="GND" x="-129.54" y="205.74" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-126.365" y="203.835" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY34" gate="GND" x="-129.54" y="220.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-126.365" y="219.075" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY35" gate="GND" x="-109.22" y="220.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-106.045" y="219.075" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY36" gate="GND" x="-109.22" y="205.74" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-106.045" y="203.835" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12699,22 +12783,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="195.58" x2="73.66" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="CIO" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="48.26" y1="203.2" x2="48.26" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="200.66" x2="53.34" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="203.2" x2="58.42" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
-<junction x="53.34" y="200.66"/>
-<pinref part="CS2" gate="G$1" pin="-"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="CS1" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="BATTERY" gate="G$1" pin="1"/>
 <wire x1="-147.32" y1="162.56" x2="-147.32" y2="160.02" width="0.1524" layer="91"/>
@@ -12768,6 +12836,42 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="284.48" y1="160.02" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<wire x1="48.26" y1="203.2" x2="48.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="200.66" x2="53.34" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="203.2" x2="58.42" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<junction x="53.34" y="200.66"/>
+<pinref part="CS2" gate="G$1" pin="-"/>
+<pinref part="CS1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY31" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<wire x1="73.66" y1="195.58" x2="73.66" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="CIO" gate="G$1" pin="2"/>
+<pinref part="SUPPLY32" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="-134.62" y1="205.74" x2="-132.08" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="SUPPLY33" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="-134.62" y1="220.98" x2="-132.08" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="220.98" x2="-111.76" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY35" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="205.74" x2="-111.76" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="SUPPLY36" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="5V" class="1">
 <segment>
@@ -12798,6 +12902,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="XBEE" gate="1" pin="3"/>
 <wire x1="-68.58" y1="205.74" x2="-76.2" y2="205.74" width="0.1524" layer="91"/>
 <label x="-76.2" y="205.74" size="1.778" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="218.44" x2="-132.08" y2="218.44" width="0.1524" layer="91"/>
+<label x="-132.08" y="218.44" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="OPC" class="1">
@@ -13176,6 +13285,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="241.3" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
 <label x="233.68" y="162.56" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="203.2" x2="-132.08" y2="203.2" width="0.1524" layer="91"/>
+<label x="-132.08" y="203.2" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -13392,6 +13506,30 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="PLANTOWER" gate="G$1" pin="4"/>
 <wire x1="177.8" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
 <label x="182.88" y="165.1" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="3/CANTX"/>
+<wire x1="-172.72" y1="116.84" x2="-193.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="-193.04" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="218.44" x2="-111.76" y2="218.44" width="0.1524" layer="91"/>
+<label x="-111.76" y="218.44" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="RX_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="4/CANRX"/>
+<wire x1="-172.72" y1="114.3" x2="-193.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="-193.04" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="203.2" x2="-111.76" y2="203.2" width="0.1524" layer="91"/>
+<label x="-111.76" y="203.2" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
